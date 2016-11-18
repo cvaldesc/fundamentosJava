@@ -30,7 +30,8 @@ public class Puntos2D {
 	//d{p1, p2} = raiz ((x2 - x1)^2 + (y2-y1)^2)
 	// p2 = p, p1= punto de mi clase
 	public double distancia( Puntos2D p){
-		int dx = pow(p.x , this.x);
-		return;
+		double dx = pow(p.x - this.x,2);
+		double dy = pow(p.y - this.y,2);
+		return sqrt(dx + dy);
 	}
 }
